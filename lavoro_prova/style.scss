@@ -1,0 +1,178 @@
+
+$yellowColor:rgb(177, 177, 96);
+$navColor:#D0C5B6;
+$textColor:white;
+$paddingNav:0;
+$paddingDiv:1%;
+$fontDiv: 150%;
+$smallSize: small;
+$marginNav:3rem;
+$fontNav:Merriweather;
+$colorBlack:black;
+$underline:underline;
+$borderNone:none;
+$width:100%;
+$size:50%;
+$tenpercent:10%;
+$sticky:sticky;
+$Montserrat:Montserrat;
+$PlayfairDisplay: Playfair Display;
+$fontSize: 2vw;
+$fontSize2:4vw;
+$display:block;
+$absolute:absolute;
+$trasform:translate(-50%, -50%);
+$scale:scale(1.1);
+$thirty:30%;
+$fiftyfour:54%;
+$sixty:70%;
+
+
+.navDiv{
+    background-color: $navColor;
+    padding-left: $paddingDiv;
+    
+}
+
+.navbar{
+    padding: $paddingNav;
+    background-color: $textColor !important;
+}
+
+.navbar-brand{
+   color:unset; 
+}
+
+.navDivText{
+    color: $textColor !important;
+    font-size: $fontDiv;
+}
+
+.navText{
+    font-size: $smallSize;
+    margin-left: $marginNav;
+    font-family: $fontNav;
+    color: $colorBlack !important;
+}
+
+a:hover{
+    color: $navColor !important;
+    text-decoration: $underline!important;
+}
+
+.search{
+border-left: $borderNone;
+border-right: $borderNone;
+border-top: $borderNone;
+border-color: $colorBlack;
+}
+
+.image{
+    width: $width;
+    
+}
+
+.text-block {
+    position: $absolute;
+  top: $size;
+  left: $size;
+  transform: $trasform ;
+  color: $textColor;
+  }
+
+ 
+
+  .paragraph{
+font-size: $smallSize;
+font-family: $fontNav;
+  }
+
+  .par1{
+    font-family: $Montserrat;
+    font-size: $fontSize ;
+  }
+  .title{
+    font-family: $PlayfairDisplay;
+    font-size: $fontSize2;
+  }
+
+  .discover{
+    width: $width !important;
+    display: $display !important;
+    margin-bottom: $tenpercent;
+    border-top: $borderNone;
+  }
+
+  .view{
+    
+    display: $display !important;
+    margin-bottom: $tenpercent;
+    color: $yellowColor !important;
+  }
+
+  .card:hover {
+    transform:$scale ;
+  }
+
+ 
+
+  
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) and (max-width: 800px)  { .card {
+    display: $borderNone;
+  }
+
+  .next{
+    position: $absolute;
+    left: $sixty;
+    top:$sixty;
+  }}
+    // Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { .card {
+    display: $borderNone;
+  }
+  .next{
+    position: $absolute;
+    left: $sixty;
+    top:$sixty;
+  } }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { .card{ 
+    width: $thirty;
+    position: $absolute;
+    right: $paddingDiv;
+    top: $fiftyfour;
+  } 
+.next{display:$borderNone ;}}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  .card{ 
+    width: $thirty;
+    position: $absolute;
+    right: $paddingDiv;
+    top: $fiftyfour;
+  }
+  .next{display:$borderNone ;} }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  .card{ 
+    width: $thirty;
+    position: $absolute;
+    right: $paddingDiv;
+    top: $fiftyfour;
+  }
+  .next{display:$borderNone ;} }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { .card{ 
+    width: $thirty;
+    position: $absolute;
+    right: $paddingDiv;
+    top: $fiftyfour;
+  }
+  .next{display:$borderNone ;} }
+
+  
+
+ 
